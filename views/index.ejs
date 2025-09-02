@@ -46,6 +46,26 @@
     <!-- custom css -->
     <link href="/index/css/styles-2.css" rel="stylesheet" id="colors">
 <meta name="google-site-verification" content="02wBCS7y151YhakAjqTUpAa62Qy8g8tFL-pWPf_WcrU" />
+
+    <!-- Mobile responsive background image styles -->
+    <style>
+        /* Mobile devices (up to 768px) */
+        @media only screen and (max-width: 768px) {
+            .banner-section {
+                background-size: contain !important;
+                background-position: center center !important;
+                background-attachment: scroll !important;
+            }
+        }
+        
+        /* Small mobile devices (up to 480px) */
+        @media only screen and (max-width: 480px) {
+            .banner-section {
+                background-size: 100% auto !important;
+                background-position: center top !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -138,7 +158,8 @@
 
         <!-- start banner section-->
         <section 
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/newbg.jpeg); background-repeat: no-repeat; background-position: 10% center; background-size: cover; background-color: black; min-height: 120vh; position: relative;" >
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/newbg.jpeg); background-repeat: no-repeat; background-position: 10% center; background-size: cover; background-color: black; min-height: 120vh; position: relative;" 
+        class="banner-section" >
 
             <!-- start banner text -->
             <div class="header-text">
